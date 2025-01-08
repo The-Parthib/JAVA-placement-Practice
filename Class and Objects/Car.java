@@ -1,7 +1,6 @@
 // import java.nio.channels.Pipe.SourceChannel;
 
-public class Car {
-
+class Car {
     //instance variables;
     int noOfWheels;
     String color;
