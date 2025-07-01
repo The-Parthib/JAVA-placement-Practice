@@ -61,6 +61,15 @@ public class Implementation {
         return (root.data+sum(root.left)+sum(root.right));
     }
 
+    // Multiplication of elements
+    public static int mul(Node root) { 
+    if (root == null) {
+        return 1; // Multiplicative identity
+    }
+    return root.data * mul(root.left) * mul(root.right);
+}
+
+
     // Max tree element
     public static int maxElement(Node root){
         if (root == null) {
@@ -73,6 +82,20 @@ public class Implementation {
 
         // return Math.max(a, Math.max(b, c));
         return Math.max(root.data, Math.max(maxElement(root.left), maxElement(root.right)));
+    }
+
+    // Height of a tree
+    public static int height(Node root){
+        // if(root == null) return 0;
+        // if(root.left == null && root.right == null) return 0;
+        if(root == null || (root.left == null && root.right == null)) return 0;
+        return (1+Math.max(height(root.left),height(root.right)));
+    }
+
+    // Min value of the tree
+    public static int minElement(Node root){
+        if (root == null) return Integer.MAX_VALUE;
+        return Math.min(root.data,Math.min(minElement(root.left), minElement(root.right)));
     }
 
     public static void main(String[] args) {
@@ -92,6 +115,9 @@ public class Implementation {
 
         // System.out.println("size of tree : "+size(root));
         // System.out.println("sum of tree elements : "+sum(root));
-        System.out.println("Max of tree elements : "+maxElement(root));
+        // System.out.println("Max of tree elements : "+maxElement(root));
+        // System.out.println("Height of tree : "+height(root));
+        // System.out.println("Min of tree : "+minElement(root));
+        System.out.println("mul of tree : "+mul(root));
     }
 }
