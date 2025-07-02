@@ -1,5 +1,3 @@
-package Trees;
-
 public class Implementation {
     public static class Node{
         int data;
@@ -128,6 +126,7 @@ public class Implementation {
         if(root==null) return;
         if (level==1) {
             System.out.print(root.data+" ");
+            return;
         }
         nthLevel(root.left, level-1);
         nthLevel(root.right, level-1);
@@ -178,7 +177,5 @@ public class Implementation {
         // System.out.println("\nlevel of tree : "+level(root));
         // nthLevel(root, 3);
         levelOrder(root);
-        
-        
     }
 }
