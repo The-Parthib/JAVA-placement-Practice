@@ -2,20 +2,17 @@ import java.util.Scanner;
 
 public class ArraySumAvg {
 
-    public static int sumArr(int[] arr){
-        int sum=0;
+    public static long sumArr(int[] arr){
+        long sum=0;
         for (int i = 0; i < arr.length; i++) {
             sum +=arr[i];
         }
         return sum;
     }
 
-    public static int sumAvg(int[] arr){
-        int sum=0;
-        for (int i = 0; i < arr.length; i++) {
-            sum +=arr[i];
-        }
-        return sum/arr.length;
+    public static double sumAvg(int[] arr){
+        double sum = sumArr(arr);
+        return (sum/arr.length);
     }
 
     public static void main(String[] args) {
