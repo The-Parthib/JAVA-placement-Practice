@@ -8,7 +8,7 @@ public class minMaxArray {
         int min = minElement(myArray);
 
         System.out.println("\nMax element of the array : "+max);
-        System.out.println("\nMax element of the array : "+min);
+        System.out.println("\nMin element of the array : "+min);
     }
 
     public static int minElement(int[] arr){
