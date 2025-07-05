@@ -18,8 +18,13 @@ public class ArrayUtility {
             System.out.print("enter "+(i+1)+" element : ");
             myArr[i] = sc.nextInt();
         }
-        sc.close();
 
         return myArr;
+    }
+
+    public static void display(int[] arr){
+        for (int i : arr) {
+            System.out.print(i+" ");
+        }
     }
 }
