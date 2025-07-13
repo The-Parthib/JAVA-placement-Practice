@@ -15,11 +15,23 @@ public class RecursionThings {
         // System.out.println(result);
         // int fact = fact(4);
         // System.out.println(fact);
-        int arr[] = {2,3,5,7,8};
-        reverseArray(0, arr, 5);
-        for (int i : arr) {
-            System.out.print(i+" ");
-        }
+
+        // int arr[] = {2,3,5,7,8};
+        // reverseArray(0, arr, 5);
+        // for (int i : arr) {
+        //     System.out.print(i+" ");
+        // }
+
+        /*String s = "MADAM";
+        boolean rs = palindrome(0, s);
+        System.out.println(rs);*/
+
+        int fib = fibonacci(7);
+        System.out.println(fib);
+
+        fiboPrint(7);
+
+
         
     }
 
@@ -94,5 +106,27 @@ public class RecursionThings {
         arr[n-i-1] = temp;
 
         reverseArray(i+1, arr, n);
+    }
+
+    public static boolean palindrome(int i, String s){
+        if (i>= (s.length()/2)) {
+            return true;
+        }
+        if (s.charAt(i) != s.charAt(s.length()-i-1)) {
+            return false;
+        }
+        return palindrome(i+1, s);
+    }
+
+    public static int fibonacci(int n){
+        if(n<=1) return n;
+        return fibonacci(n-1)+fibonacci(n-2);
+    }
+
+    public static void fiboPrint(int i){
+        for (int j = 0; j <= i; j++) {
+            System.out.print(fibonacci(j)+" ");
+        }
+        System.out.println();
     }
 }
