@@ -10,6 +10,9 @@ public class Hashmaps {
         map.put("apple", 24);
         map.put("bananan", 37);       
         map.put("lemon", 2);
+        // map.remove("lemon"); // to remove values
+        int size = map.size();
+        System.out.println(size);
         System.out.println(map);
         map.put("apple", 150); // if we use same key values then it changes the older value to new value
         System.out.println(map);

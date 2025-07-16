@@ -41,9 +41,9 @@ public class HashSets {
                 System.out.print(it.next()+" ");
             }
 
-            // for each loop
-            // for (Integer integer : set) {
-            //     System.out.print(integer+" ");
+            // for each loop || Done
+            // for (int element : set) {
+            //     System.out.print(element+" ");
             // }
     }
 }
