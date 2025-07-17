@@ -1,5 +1,8 @@
 package DSA.Hashing;
 
+// given two arrays and we need to calculate Union of two arrays
+// union means there will be common elements without repetation
+
 import java.util.HashSet;
 
 public class UnionArray {
