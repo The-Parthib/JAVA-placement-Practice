@@ -38,7 +38,7 @@ public class Implementation {
         if (root == null){
             return;
         }
-        System.err.print(root.data+" ");
+        System.out.print(root.data+" ");
         preOrder(root.left);
         preOrder(root.right);
     }
