@@ -1,10 +1,10 @@
-class shape{
+class shaPe{
     public void area(){
         System.out.println("area of the shape ");
     }
 }
 
-class Triangle extends shape{
+class Triangle extends shaPe{
     public void area(int l,int h){
         System.out.println("Area : "+(0.5*l*h));
     }
