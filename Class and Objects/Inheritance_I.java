@@ -4,7 +4,7 @@ class shaPe{
     }
 }
 
-class Triangle extends shaPe{
+class Trianglee extends shaPe{
     public void area(int l,int h){
         System.out.println("Area : "+(0.5*l*h));
     }
@@ -12,8 +12,8 @@ class Triangle extends shaPe{
 
 public class Inheritance_I {
     public static void main(String[] args) {
-        Triangle t1 = new Triangle();
-        Triangle t2 = new Triangle();
+        Trianglee t1 = new Trianglee();
+        Trianglee t2 = new Trianglee();
         t1.area();
         t2.area(5, 3);
     }

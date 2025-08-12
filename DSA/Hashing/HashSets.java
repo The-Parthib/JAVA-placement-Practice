@@ -26,7 +26,7 @@ public class HashSets {
         System.out.println("set size "+set.size());
 
         // As set doesn't have index so we need to import iterator to traverse the set
-        Iterator it = set.iterator();
+        Iterator<Integer> it = set.iterator();
         // two main functions
         // hasnext() and next();
         /* 

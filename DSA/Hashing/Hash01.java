@@ -25,7 +25,7 @@ public class Hash01 {
         // try {
         //     return hash[num];
         // } catch (Exception e) {
-        //     // TODO: handle exception
+        //     
         //     System.out.println(e);
         // }
         return hash[num];

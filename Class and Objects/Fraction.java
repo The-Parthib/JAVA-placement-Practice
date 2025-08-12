@@ -2,7 +2,7 @@ public class Fraction {
 
     // HCF Euclidian algo
     public static int hcf(int num, int den) {
-        // TODO Auto-generated method stub
+        
 
         while (num>0 && den>0) {
             if (num>den) {
