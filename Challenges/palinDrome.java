@@ -17,7 +17,7 @@ public class palinDrome {
 
     public static boolean isPalindrome(int n){
         int original = n;
-        int temp = 0, digit;
+        int temp = 0, digit=0;
         while (n>0) {
             digit = n%10;
             temp = temp*10 + digit;
