@@ -1,4 +1,4 @@
-package DSA.Arrays;
+package DSA.Arrays.specials;
 
 // reset the sum if the sum is less than 0;
 

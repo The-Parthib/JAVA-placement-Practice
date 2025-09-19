@@ -1,4 +1,4 @@
-package DSA.Arrays;
+package DSA.Arrays.specials;
 
 public class RotatedSortedArray {
     public static void main(String[] args) {
