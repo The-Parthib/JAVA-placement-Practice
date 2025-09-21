@@ -23,16 +23,20 @@ public class SingleNumber {
         return -1;
     }
 
-    static int optimalSinglenumber(int[] arr){
-
-
-        return 0;
+    static int OptimalSinglenumber(int[] arr){
+        int xor=0;
+        for (int i : arr) {
+            xor = xor^i;
+        }
+        return xor;
     }
 
 
     public static void main(String[] args) {
-        int[] arr = { };
-
+        int[] arr = { 1,1,2,3,2,4,4 };
+        // BruteSingleNumber(arr);
+        int x = OptimalSinglenumber(arr);
+        System.out.println(x);
         
     }
     
