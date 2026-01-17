@@ -7,6 +7,7 @@ class Car {
     float maxSpeed;
     float currentFuelInLiters;
     int noOfSeats;
+    String model;
 
     // instance methods
     public void drive(){
@@ -27,5 +28,16 @@ class Car {
 
     public float getCurrentFuel(){
         return currentFuelInLiters;
+    }
+
+    // instance methods
+    public void showDetails(){
+        System.out.println("Model of Car: " + model);
+        System.out.println("Color of Car: " + color);
+        System.out.println("No of Wheels: " + noOfWheels);
+        System.out.println("Max Speed: " + maxSpeed);
+        System.out.println("Current Fuel in Liters: " + currentFuelInLiters);
+        System.out.println("No of Seats: " + noOfSeats);
+
     }
 }
