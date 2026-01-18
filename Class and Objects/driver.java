@@ -14,5 +14,14 @@ public class driver {
       bmw.noOfSeats = 5;
       bmw.model = "BMW X5";
       bmw.showDetails();
+
+      Car audi = new Car();
+      audi.color = "White";
+      audi.noOfWheels = 4;
+      audi.maxSpeed = 240.0f;
+      audi.currentFuelInLiters = 8.0f;
+      audi.noOfSeats = 5;
+      audi.model = "Audi Q7";
+      audi.showDetails();
  }
 }
