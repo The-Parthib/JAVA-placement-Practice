@@ -34,7 +34,6 @@ public class RotatedSortedArray {
                     right = mid-1;
                 }
             }
-            
         }
         return -1;
     }
