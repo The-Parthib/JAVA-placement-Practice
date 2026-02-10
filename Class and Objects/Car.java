@@ -10,16 +10,22 @@ class Car {
     String model;
 
     // instance methods
-    public void drive(){
-        System.out.println("Car is being driven");
-        if (currentFuelInLiters == 0) { 
+    public Car start(){
+        if(currentFuelInLiters == 0){
             System.out.println("Please Fill Tank, Out of Fuel");
-        } else if (currentFuelInLiters < 5) {
-            System.out.println("Car is in Reserved Mode Please Fuel Up");
-            currentFuelInLiters--;
-        } else{
-            currentFuelInLiters--;
         }
+        else if (currentFuelInLiters < 5) {
+            System.out.println("Car is in Reserved Mode Please Fuel Up");
+        } else {
+            System.out.println("Car is Starting ... bruhmmm");
+        }
+
+        return this;
+    }
+
+    public void drive(){
+        currentFuelInLiters--;
+        System.out.println("Car is being driven");
     }
 
     public void addFuel(float fuel){

@@ -6,7 +6,8 @@ public class driver {
    //  myCar.addFuel(12.3f);
    //  System.out.println(myCar.getCurrentFuel());
 
-    Car bmw = new Car();
+   /* 
+      Car bmw = new Car();
       bmw.color = "Black";
       bmw.noOfWheels = 4;
       bmw.maxSpeed = 250.5f;
@@ -23,5 +24,10 @@ public class driver {
       audi.noOfSeats = 5;
       audi.model = "Audi Q7";
       audi.showDetails();
+      */
+
+      Car swift = new Car();
+      swift.addFuel(6);
+      swift.start().drive();
  }
 }
