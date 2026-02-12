@@ -28,8 +28,8 @@ class Car {
         System.out.println("Car is being driven");
     }
 
-    public void addFuel(float fuel){
-        currentFuelInLiters += fuel;
+    public void addFuel(float currentFuelInLiters){
+        this.currentFuelInLiters += currentFuelInLiters;
     }
 
     public float getCurrentFuel(){
