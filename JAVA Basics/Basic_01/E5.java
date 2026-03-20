@@ -1,3 +1,4 @@
+package Basic_01;
 public class E5 {
     public static void main(String[] args) {
         /*float myNum = 5;

@@ -1,3 +1,4 @@
+package Basic_01;
 public class array01 {
     public static void main(String[] args) {
         int[] myArr = new int[5];
