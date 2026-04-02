@@ -1,4 +1,14 @@
 public class driver {
+
+  static int age;
+  
+  public boolean isAllowedToDrive(){
+    return age >= 18;
+  }
+  
+  String name;
+
+
  public static void main(String[] args) {
    //  Car myCar = new Car();
    //  myCar.drive();
@@ -29,5 +39,10 @@ public class driver {
       Car swift = new Car();
       swift.addFuel(6);
       swift.start().drive();
+
+      driver d = new driver();
+      age = 21;
+      d.name = "Riju";
+      System.out.println(age + " " + d.name);
  }
 }

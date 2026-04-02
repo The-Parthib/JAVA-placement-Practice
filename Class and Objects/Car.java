@@ -8,6 +8,7 @@ class Car {
     float currentFuelInLiters;
     int noOfSeats;
     String model;
+    static int key = 10;
 
     // instance methods
     public Car start(){

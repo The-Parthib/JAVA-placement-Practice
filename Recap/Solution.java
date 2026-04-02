@@ -155,5 +155,6 @@ public class Solution {
         
         int result = solve(N, R, M, edges, Q, queries);
         System.out.println(result);
+        scan.close();
     }
 }
